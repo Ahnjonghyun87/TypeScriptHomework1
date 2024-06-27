@@ -1,8 +1,8 @@
 import "./App.css";
-import { fetchCountries } from "./api/fetchCountry";
+import CountryList from "./components/CountryList";
 
 function App() {
-  return fetchCountries();
+  return <CountryList />;
 }
 
 export default App;
