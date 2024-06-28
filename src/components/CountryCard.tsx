@@ -14,6 +14,8 @@ const CountryCard: React.FC<CountryCardProps> = ({
     <StCard onClick={() => handleSelectedCountry(country)}>
       <img src={country.flags.svg} style={{ width: "40px", height: "40px" }} />
       <h3>{country.name.common}</h3>
+      <p>수도명 {country.capital}</p>
+      <p>인구 {country.population} 명 </p>
     </StCard>
   );
 };
@@ -31,5 +33,5 @@ const StCard = styled.div`
   align-items: center;
   justify-content: center;
   width: 350px;
-  height: 150px;
+  height: 200px;
 `;
